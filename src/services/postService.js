@@ -10,6 +10,12 @@ class Post{
         };
         return axios.post(url, formData, config);
     }
+
+    getPosts(){
+        const url = "http://localhost:8000/api/get-posts";
+        return axios.get(url);
+
+    }
 }
 
 export default new Post();
